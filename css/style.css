@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  text-align: center;
+  line-height: 2;
+}
+
+.top-container {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXklMjBkaWFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.top-container::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+  transition: 1s;
+}
+
+.top-container:hover {
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  color: white;
+  font-size: 3.0rem;
+  font-family: 'Sacramento', cursive;
+  animation-name: myname;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  width: fit-content;
+}
+
+@keyframes myname {
+  0% {
+    background-color: white;
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    background-color: grey;
+    left: 0;
+    top: 0;
+  }
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.blogbtn {
+  background: #333333;
+  background-image: -webkit-linear-gradient(top, #333333, #798777);
+  background-image: -moz-linear-gradient(top, #333333, #798777);
+  background-image: -ms-linear-gradient(top, #333333, #798777);
+  background-image: -o-linear-gradient(top, #333333, #798777);
+  background-image: -webkit-gradient(to bottom, #333333, #798777);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: 'Merriweather', serif;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px;
+  -webkit-box-shadow: -2px -4px 10px 0 #798777;
+  -moz-box-shadow: -2px -4px 10px 0 #798777;
+  box-shadow: -2px -4px 10px 0 #798777;
+  text-shadow: 5px 5px 20px #798777;
+  border: solid #798777 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.blogbtn:hover {
+  border: dotted #000000 1px;
+  background: #798777;
+  background-image: -webkit-linear-gradient(top, #798777, #333333);
+  background-image: -moz-linear-gradient(top, #798777, #333333);
+  background-image: -ms-linear-gradient(top, #798777, #333333);
+  background-image: -o-linear-gradient(top, #798777, #333333);
+  background-image: -webkit-gradient(to bottom, #798777, #333333);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.smileyimg {
+  width: 15%;
+  height: 15%;
+  margin-left: 5px;
+}
+
+.aboutimg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.danceimg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.hobbiesimg {
+  width: 200px;
+  height: 200px;
+}
+
+.headinddiv {
+  background-color: grey;
+  width: 200px;
+  margin: auto;
+}
+
+.hobbies-rowone {
+  position: relative;
+  width: 500px;
+  height: 550px;
+  margin: 100px auto;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.badmn {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.photod {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.readbksd {
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+ .watchtv {
+   margin: 0;
+   position: absolute;
+   bottom: 5px;
+   right: 10px;
+ }
